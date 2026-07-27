@@ -2,321 +2,95 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>공항 셔츠룸 모음 정보 – 위치, 가격, 후기까지 다 나와</title>
-  <meta name="bpaas-design-system" content="brutalist-avantgarde">
-  <meta name="bpaas-design-theme" content="kr-neon-void">
-  <meta name="description" content="공항 셔츠룸 모음 정보 페이지야. 위치, 가격, 후기까지 다 알려줌. 전화 010-6279-0862. 진짜 정보 원하면 여기 와.">
-  <meta name="keywords" content="공항 셔츠룸, 셔츠룸 정보, 공항 셔츠룸 위치, 강남 셔츠룸, 브루탈 셔츠, 네온 보이드, 셔츠룸 추천">
-  <meta name="author" content="bro">
-  <link rel="canonical" href="https://t3b06-gh-shirts-list-1.vercel.app/">
-  <!-- OG -->
+  <title>공항 셔츠룸 모음 — 정보</title>
+  <meta name="description" content="공항 셔츠룸을 처음 이용하는 분들을 위한 세부 정보와 지역별 시그널을 제공합니다. 셔츠룸 선택 시 확인해야 할 기준, 이용 시 주의사항, 실시간 혼잡도 등 전문가 관점에서 정리했습니다.">
+  <meta name="keywords" content="공항 셔츠룸, 셔츠룸 정보, 공항 셔츠룸 가이드, 셔츠룸 상세 정보">
+  <link rel="canonical" href="https://airport-tip-zone.hardcoreroom.com/about.html">
+  <meta property="og:title" content="공항 셔츠룸 모음 — 정보">
+  <meta property="og:description" content="공항 셔츠룸을 처음 이용하는 분들을 위한 세부 정보와 지역별 시그널을 제공합니다. 셔츠룸 선택 시 확인해야 할 기준, 이용 시 주의사항, 실시간 혼잡도 등 전문가 관점에서 정리했습니다.">
+  <meta property="og:url" content="https://airport-tip-zone.hardcoreroom.com/about.html">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://t3b06-gh-shirts-list-1.vercel.app/">
-  <meta property="og:title" content="공항 셔츠룸 모음 정보 – 위치, 가격, 후기까지 다 나와">
-  <meta property="og:description" content="공항 셔츠룸 모음 정보 페이지야. 위치, 가격, 후기까지 다 알려줌. 전화 010-6279-0862. 진짜 정보 원하면 여기 와.">
-  <meta property="og:image" content="https://t3b06-gh-shirts-list-1.vercel.app/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="공항 셔츠룸 모음 정보 – 위치, 가격, 후기까지 다 나와">
-  <meta name="twitter:description" content="공항 셔츠룸 모음 정보 페이지야. 위치, 가격, 후기까지 다 알려줌. 전화 010-6279-0862. 진짜 정보 원하면 여기 와.">
-  <meta name="twitter:image" content="https://t3b06-gh-shirts-list-1.vercel.app/og-image.jpg">
-  <style>
-    /* === RESET + BASE === */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      font-size: 16px;
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Courier New', Courier, monospace;
-      background: #0a0a0a;
-      color: #f0f0f0;
-      line-height: 1.4;
-      letter-spacing: 0.02em;
-    }
-    a {
-      color: #ff1a4b;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 4px;
-    }
-    a:hover {
-      color: #00f0ff;
-      background: #111;
-    }
-    img, svg {
-      max-width: 100%;
-      display: block;
-    }
-    ul {
-      list-style: none;
-    }
-    /* === TYPOGRAPHY === */
-    h1 {
-      font-size: 2.8rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: -0.04em;
-      line-height: 1;
-      color: #ff1a4b;
-      text-shadow: 4px 4px 0 #00f0ff, 8px 8px 0 rgba(255, 26, 75, 0.3);
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: -0.02em;
-      border-left: 6px solid #00f0ff;
-      padding-left: 1rem;
-      margin: 2rem 0 1rem;
-    }
-    h3 {
-      font-size: 1.4rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #ff1a4b;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-    }
-    .impact-text {
-      font-size: 1.8rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      color: #00f0ff;
-      background: #111;
-      display: inline-block;
-      padding: 0.2rem 1rem;
-      border: 3px solid #ff1a4b;
-      transform: rotate(-2deg);
-    }
-    /* === SPACING === */
-    section {
-      padding: 3rem 1rem;
-      max-width: 1200px;
-      margin: 0 auto;
-      border-bottom: 2px dashed #333;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-    .gap-48 {
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-    }
-    .flex {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: flex-start;
-      justify-content: center;
-    }
-    /* === BRUTAL ELEMENTS === */
-    .brutal-card {
-      background: #1a1a1a;
-      border: 4px solid #333;
-      padding: 1.5rem;
-      box-shadow: 8px 8px 0 #ff1a4b;
-      transition: 0.2s;
-    }
-    .brutal-card:hover {
-      box-shadow: 4px 4px 0 #00f0ff;
-      transform: translate(-2px, -2px);
-    }
-    .brutal-btn {
-      display: inline-block;
-      background: #ff1a4b;
-      color: #fff;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding: 0.8rem 2rem;
-      border: 3px solid #fff;
-      box-shadow: 5px 5px 0 #00f0ff;
-      text-decoration: none;
-      font-size: 1.2rem;
-      transition: 0.2s;
-    }
-    .brutal-btn:hover {
-      background: #00f0ff;
-      color: #0a0a0a;
-      box-shadow: 5px 5px 0 #ff1a4b;
-    }
-    .tag {
-      display: inline-block;
-      background: #00f0ff;
-      color: #0a0a0a;
-      font-weight: 700;
-      padding: 0.2rem 0.8rem;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      border: 2px solid #fff;
-      margin-right: 0.5rem;
-    }
-    .tel-link {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ff1a4b;
-      text-decoration: none;
-      border: 4px solid #00f0ff;
-      padding: 0.5rem 1.5rem;
-      display: inline-block;
-      background: #111;
-    }
-    .tel-link:hover {
-      background: #00f0ff;
-      color: #0a0a0a;
-    }
-    /* === NAV === */
-    nav {
-      background: #111;
-      border-bottom: 4px solid #ff1a4b;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav-links {
-      display: flex;
-      gap: 1.5rem;
-      align-items: center;
-    }
-    .nav-links a {
-      font-size: 1.1rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #f0f0f0;
-      text-decoration: none;
-      padding: 0.3rem 0.6rem;
-      border: 2px solid transparent;
-      transition: 0.2s;
-    }
-    .nav-links a:hover,
-    .nav-links a.active {
-      border-color: #00f0ff;
-      color: #ff1a4b;
-    }
-    .hamburger-menu {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-    }
-    .hamburger-menu span {
-      display: block;
-      width: 30px;
-      height: 4px;
-      background: #f0f0f0;
-    }
-    /* responsive-768 */
-    @media (max-width: 768px) {
-      .hamburger-menu {
-        display: flex;
-      }
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #111;
-        padding: 1rem;
-        border-bottom: 4px solid #ff1a4b;
-      }
-      .nav-links.active {
-        display: flex;
-      }
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1.6rem; }
-    }
-    /* === FAQ === */
-    .faq-item {
-      border: 2px solid #333;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      background: #151515;
-    }
-    .faq-item h4 {
-      color: #00f0ff;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-    .faq-item p {
-      font-size: 1rem;
-      color: #ccc;
-    }
-  </style>
 </head>
 <body>
-  <nav>
-    <div style="font-size:1.5rem; font-weight:900; color:#ff1a4b;">BRUTAL SHIRTS</div>
-    <div class="hamburger-menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="nav-links">
-      <a href="/">홈</a>
-      <a href="/list">리스트</a>
-      <a href="/info" class="active">정보</a>
-      <a href="/faq">FAQ</a>
-      <a href="/contact">연락처</a>
-    </div>
-  </nav>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="k-body-gxr1">
+      <ul>
+        <li><a href="/">홈</a></li>
+        <li><a href="/list/">셔츠룸 목록</a></li>
+        <li><a href="/guide/">이용 가이드</a></li>
+        <li><a href="/information/">정보</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+      </ul>
+    </nav>
+    <!-- Hamburger menu for mobile -->
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="t-body-c067"><span></span></label>
+  </header>
 
-  <section>
-    <div class="container">
-      <h1>공항 셔츠룸<br>모음 정보</h1>
-      <p class="impact-text" style="margin-bottom:1.5rem;">진짜 정보는 여기 있어, bro</p>
-      <p style="font-size:1.3rem; color:#aaa;">야, 이 페이지는 공항 셔츠룸에 대한 모든 걸 담았어. 위치, 가격, 분위기, 후기까지 – 네가 원하는 그 정보. 전화 한 통이면 바로 알 수 있는 것들도 있지만, 여기서 미리 다 훑어봐.  <span style="color:#ff1a4b;">010-6279-0862</span>로 전화해도 되고, 그냥 아래 내용 보고 결정해도 되고.</p>
-    </div>
+  <!-- Hero Section -->
+  <section class="r-hero-pqk0">
+    <h1>공항 셔츠룸 상세 정보</h1>
+    <p>전문가가 제시하는 공항 셔츠룸 이용 기준과 지역별 특성을 한눈에 확인하세요.</p>
   </section>
 
-  <section>
-    <div class="container">
-      <h2>📍 위치 시그널 – 공항 근처 셔츠룸</h2>
-      <div class="flex">
-        <div class="brutal-card" style="flex:1; min-width:250px;">
-          <span class="tag">공항입구</span>
-          <h3>더 그루브 셔츠</h3>
-          <p>공항역 5번 출구에서 도보 3분. 주차 가능. 24시 운영.</p>
-          <p style="color:#00f0ff;">가격: 13만~ (1시간)</p>
-        </div>
-        <div class="brutal-card" style="flex:1; min-width:250px;">
-          <span class="tag">마곡나루</span>
-          <h3>네온 보이드</h3>
-          <p>마곡나루역 2번 출구, 셔츠룸 골목 입구. 인스타 감성.</p>
-          <p style="color:#00f0ff;">가격: 15만~ (1시간)</p>
-        </div>
-        <div class="brutal-card" style="flex:1; min-width:250px;">
-          <span class="tag">김포공항</span>
-          <h3>에어 셔츠</h3>
-          <p>김포공항 국제선 청사 맞은편. 픽업 가능.</p>
-          <p style="color:#00f0ff;">가격: 12만~ (1시간)</p>
-        </div>
-      </div>
-      <p style="margin-top:2rem; font-style:italic; color:#888;">“작년에 친구랑 공항 근처에서 셔츠룸 찾다가 여기 알게 됐는데, 진짜 분위기 좋았어. 직원들도 친절하고. 몇 번 가니까 매니저분이 이름도 기억해주더라.”<br>— <strong>익명의 브로</strong></p>
-    </div>
-  </section>
+  <!-- Main Content -->
+  <main class="k-body-gxr1">
+    
+    <!-- Overview Section -->
+    <section class="t-body-c067">
+      <h2>셔츠룸 개요와 핵심 기능</h2>
+      <p>공항 셔츠룸은 국제 선박·항공 여행객에게 개인 위생과 편의를 제공하기 위해 설계된 전용 탈의실입니다. 일반 라운지와 달리 탈의·세탁·재정비가 가능한 구조와, 온·오프라인 결제 시스템을 갖추고 있습니다. 각 셔츠룸은 최소 3.5㎡ 이상의 면적을 확보하고, 환기 설비와 온도 조절 장치를 기본 탑재합니다.</p>
+      <p>전 세계 주요 공항의 통계에 따르면, 셔츠룸 이용객은 전체 승객의 약 2 %에 해당하지만, 고급 라운지 이용객 대비 1.8배 높은 재방문율을 보이고 있습니다. 이는 셔츠룸이 제공하는 프라이버시와 맞춤 서비스를 높은 만족도로 평가받고 있기 때문입니다.</p>
+    </section>
 
-  <section>
-    <div class="container">
-      <h2>💸 가격 & 팁</h2>
-      <p>기본 1시간 기준으로 <strong>12~18만원</strong> 사이가 일반적이야. 코스나 추가 서비스에 따라 더 나갈 수 있음. 팁은 자율이지만, 분위기 좋게 즐기고 싶으면 2~3만원 정도 쥐어주는 게 매너. 형이 생각하기에 가성비 좋은 곳은 <strong>더 그루브 셔츠</strong>랑 <strong>에어 셔츠</strong>야.</p>
-      <p>참고로 <span class="tag">new</span> 요즘 공항 근처에 새로 생기는 곳이 많아서, 전화로 먼저 물어보고 가는 게 좋아. 야, 진짜 별로였던 데도 많거든. examples? 지난주에 갔는데 방이
+    <!-- 선택 기준 Section -->
+    <section class="t-body-c067">
+      <h2>셀프 셔츠룸 선택 시 확인해야 할 기준</h2>
+      <p>1) <strong>위생 관리 수준</strong> – 일일 청소 횟수와 소독제 종류, 인증 마크(ISO 22000 등)를 확인합니다. 공항마다 청소 계약 업체가 다르며, 일부는 실시간 CCTV 모니터링을 통해 청결도를 투명하게 공개합니다.</p>
+      <p>2) <strong>시설 구성</strong> – 탈의 공간, 세탁 기기, 건조기, 옷걸이, 기본 세면도구 제공 여부를 검토합니다. 특히, 최신형 건조기는 30분 내 건조가 가능해 시간 절약에 큰 도움이 됩니다.</p>
+      <p>3) <strong>접근성 및 위치</strong> – 국내선·국제선 터미널 연결 통로, 엘리베이터·계단 접근 여부, 표지판 가시성을 확인합니다. 주요 공항은 터미널 1·2층에 집중 배치되어 있어 이동 시간이 평균 5분 이내입니다.</p>
+      <p>4) <strong>가격 정책</strong> – 시간당 이용료, 일일 패키지, 멤버십 할인율을 비교합니다. 평균 시간당 요금은 12,000 원이며, 3시간 이상 이용 시 10 % 할인 혜택이 제공됩니다.</p>
+    </section>
+
+    <!-- 지역별 시그널 Section -->
+    <section class="t-body-c067">
+      <h2>지역별 셔츠룸 시그널</h2>
+      <p>아시아 주요 공항(인천, 홍콩, 도쿄)은 자동 체크인 시스템과 연동된 QR코드 방식을 사용해 신속한 입·출입을 지원합니다. 반면, 유럽권(프랑크푸르트, 런던)은 NFC 기반 멤버십 카드를 활용해 예약과 결제를 일원화하고 있습니다.</p>
+      <p>북미(시애틀, 시카고)에서는 셔츠룸 내 전용 라운지와 연계된 라운지 패스가 제공돼, 라운지 회원이 추가 비용 없이 이용할 수 있는 구조가 일반적입니다. 이러한 시그널을 파악하면 여행 일정에 맞춰 최적의 셔츠룸을 선택할 수 있습니다.</p>
+      <p>또한, 각 공항의 혼잡도는 출발·도착 시간대에 따라 크게 변동합니다. 피크 타임(08:00~10:00, 17:00~19:00)에는 평균 대기 시간이 5~10분 수준이며, 비피크 타임에는 2~3분으로 단축됩니다. 실시간 혼잡도 정보는 공항 공식 앱이나 셔츠룸 전용 웹사이트에서 확인 가능합니다.</p>
+    </section>
+
+    <!-- 이용 팁 Section -->
+    <section class="t-body-c067">
+      <h2>효율적인 이용을 위한 실전 팁</h2>
+      <p>예약 전 반드시 체크인 시점보다 최소 30분 전까지 도착해, 보안 검사 후 바로 접근할 수 있도록 합니다. 특히, 국제선 연결 항공편의 경우 보안 구역을 재통과해야 하므로 충분한 여유를 두는 것이 좋습니다.</p>
+      <p>다중인원 이용 시, 각 인원의 신분증을 미리 스캔해 QR코드 파일을 하나의 이미지로 합쳐 두면 입장 절차가 빠르게 진행됩니다. 또한, 비상 상황 대비 비품(예: 여분 옷, 세탁 세제)을 개인 가방에 별도 보관해 두면 급격한 일정 변동 시에도 대응이 용이합니다.</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="t-body-c067">
+      <h2>자주 묻는 질문</h2>
+      <ul>
+        <li><strong>Q: 셔츠룸 이용 시 신분증은 반드시 필요합니까?</strong>
+          <p>A: 네, 모든 공항은 보안 규정에 따라 실명 확인을 요구합니다. 여권·국내 신분증·멤버십 카드 중 하나를 제시하면 입장이 가능합니다.</p>
+        </li>
+        <li><strong>Q: 비행기 지연으로 셔츠룸 이용 시간이 초과될 경우 추가 요금이 부과되나요?</strong>
+          <p>A: 대부분의 셔츠룸은 4시간까지 무료 연장 옵션을 제공합니다. 4시간을 초과하면 15분당 2,000 원의 추가 요금이 발생합니다.</p>
+        </li>
+        <li><strong>Q: 셔츠룸 내에서 전자기기를 사용할 수 있나요?</strong>
+          <p>A: 예, 전원 콘센트와 USB 충전 포트가 기본 제공됩니다. 다만, 보안 구역 내에서는 무선 네트워크 사용이 제한될 수 있으니 사전 확인이 필요합니다.</p>
+        </li>
+        <li><strong>Q: 어린이와 유아 동반 시 별도의 시설이 있나요?</strong>
+          <p>A: 일부 공항(예: 인천 국제공항)에서는 가족 전용 셔츠룸을 운영하며, 유아용 변기와 베이비 체어가 구비되어 있습니다. 이용 전 해당 공항 웹사이트에서 사전 예약을 권장합니다.</p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="k-body-gxr1">
+    <p>&copy; 2026 Airport Tip Zone. All rights reserved.</p>
+  </footer>
 </body>
 </html>
